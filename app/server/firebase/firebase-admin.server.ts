@@ -7,10 +7,12 @@ import {
 } from "firebase-admin/app";
 import { getAuth } from "firebase-admin/auth";
 import { getFirestore } from "firebase-admin/firestore";
+import type { FirebaseApp } from "firebase/app";
 
 let apps = getApps();
 
 export let firebaseAdminApp: App;
+export let firebase: FirebaseApp;
 
 if (!apps.length) {
   firebaseAdminApp = initializeApp({

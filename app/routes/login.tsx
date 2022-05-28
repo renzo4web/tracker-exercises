@@ -1,10 +1,24 @@
 import { Form } from "@remix-run/react";
+import { SocialsProvider } from "remix-auth-socials";
 
-// app/routes/login.tsx
+interface SocialButtonProps {
+  provider: SocialsProvider;
+  label: string;
+}
+
+const SocialButton: React.FC<SocialButtonProps> = ({ provider, label }) => (
+  <Form action={`/auth/${provider}`} method="post">
+    <button>{label}</button>
+  </Form>
+);
+
 export default function Login() {
   return (
-    <Form action="/auth/google" method="post">
-      <button>Login with Google</button>
-    </Form>
+    <>
+      <SocialButton
+        provider={SocialsProvider.GOOGLE}
+        label="Login with Google"
+      />
+    </>
   );
 }

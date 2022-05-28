@@ -18,8 +18,10 @@
     "firebase-admin": "^10.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-firebaseui": "^6.0.0",
     "remix-auth": "^3.2.2",
-    "remix-auth-google": "^1.1.0"
+    "remix-auth-google": "^1.1.0",
+    "remix-auth-socials": "^1.0.2"
   },
   "devDependencies": {
     "@remix-run/dev": "^1.5.1",

@@ -4,6 +4,7 @@ node_modules
 .env
 .vercel
 .output
+GOOGLE_APPLICATION_CREDENTIALS.json
 
 /build/
 /public/build
