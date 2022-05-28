@@ -19,7 +19,5 @@ let googleStrategy = new GoogleStrategy(
   }
 );
 
-console.info("dskljdlk", googleStrategy);
-
 // Tell the Authenticator to use the form strategy
 authenticator.use(googleStrategy);
